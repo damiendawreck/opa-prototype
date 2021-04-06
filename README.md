@@ -10,7 +10,7 @@ This starts the container and volume mounts the policies folder to the container
 The OPA instance is now ready for interactions.
 
 ## Usage
-To demonstrate some of the functionality OPA has, I have setyp some prototypes.
+To demonstrate some of the functionality OPA has, I have setup some prototypes.
 
 ### First Prototype
 <p>The first prototype I have setup, simply has an input(Synchronous Push) that takes a greeting, and checks if it is <code>hello</code>. To see it in action, run the following curl command, it should return <code>result: true</code></p>
