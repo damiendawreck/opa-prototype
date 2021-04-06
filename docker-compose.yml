@@ -1,0 +1,19 @@
+version: '3.7'
+services:
+  resources:
+    build:
+      context: ./resource-server
+    ports:
+      - 3000:3000
+  opa:
+    image: openpolicyagent/opa
+    ports:
+      - 8181:8181
+    command:
+      - "run"
+      - "--server"
+      - "--watch"
+      - "--log-level=debug"
+      - "/policies"
+    volumes:
+      - ./policies:/policies
