@@ -5,7 +5,7 @@ This is a simple Open Policy Agent prototype to demonstrate some simple features
 ## Setup
 This project has a docker-compose file to easily run the prototype in docker. It uses port 8181 and maps to localhost.
 To get started, simple use the following command(Docker Required):
-<pre><code>docker-compose up opa</code></pre>
+<pre><code>docker-compose up opa server</code></pre>
 This starts the container and volume mounts the policies folder to the container.
 The OPA instance is now ready for interactions.
 

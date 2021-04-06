@@ -1,8 +1,8 @@
 version: '3.7'
 services:
-  resources:
+  server:
     build:
-      context: ./resource-server
+      context: ./server
     ports:
       - 3000:3000
   opa:
